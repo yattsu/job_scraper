@@ -21,8 +21,8 @@ def get_urls():
             for url in user_input.split(","):
                 if url.strip() == "":
                     continue
-                if bool(re.match(pattern, url)):
-                    urls.append(url.strip())
+                # if bool(re.match(pattern, url)):
+                urls.append(url.strip())
 
     return urls
 
